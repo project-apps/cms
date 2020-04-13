@@ -1,2 +1,2 @@
 # cms
-Content Management System
+Content Management Service
