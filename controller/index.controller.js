@@ -27,11 +27,7 @@ exports.get = (req, res) => {
   });
 };
 exports.getFile = (req, res)=>{
-  let filePath = req.params.filePath;
-  filePath = "C:/Users/Admin/project/resource/java/1/1.1/Document-1-1.txt";
-  let encFilePath = encodeURI(filePath);
-  filePath = decodeURI(encFilePath);
+  let filePath = decodeURI(req.params.filePath);
   logger.debug(`File Rquested for: ${filePath}`);
-  let app = express();
   res.sendFile(filePath);  
 }
