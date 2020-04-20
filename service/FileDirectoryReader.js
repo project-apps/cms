@@ -20,3 +20,14 @@ exports.readDirectory = (dirPath, cb)=> {
         return cb(err);
     });
 }
+exports.existsSync = (filePath, cb)=>{
+   try {
+     if (fs.existsSync(filePath)) {
+       return cb(null, filePath); 
+     }else{
+	return cb(new Error(`Error in fetching file: ${filePath}`));
+	}
+   } catch(err) {
+    return cb(err);
+   }
+}

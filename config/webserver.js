@@ -1,5 +1,6 @@
 const http = require('http'),
       express = require('express'),
+      cors = require('cors'),
       bodyParser = require('body-parser')
       webRouter = require('../router/web.router.js'),
       logger = require('../util/log4js.js');
@@ -11,12 +12,13 @@ exports.initialize = ()=>{
         let app = express();
         httpServer = http.createServer(app);
         httpServer.timeout = 900000;
-        app.use(bodyParser.urlencoded({ extended: false }))// parse application/x-www-form-urlencoded
+	app.use(cors());        
+	app.use(bodyParser.urlencoded({ extended: false }))// parse application/x-www-form-urlencoded
         app.use(bodyParser.json())// parse application/json
         app.use(express.static('views'));
         app.set('view engine', 'ejs');
         app.use('/cms', webRouter);
-
+	
         httpServer.listen(port, err=>{
             if(err){
                 logger.error(err);
