@@ -5,13 +5,22 @@ var fileDirectoryReader = require('../service/FileDirectoryReader.js')
 var PropertyReader = require('properties-reader');
 var prop = PropertyReader('./resource.properties');
 
-exports.get = (req_param, cb)=>{
-    let readerFilePath = prop.get('file.dir').toString() + path.sep + req_param.header;
+exports.get = (query_param, cb)=>{
+    let readerFilePath = prop.get('file.dir').toString() + path.sep + query_param.index;
     fileDirectoryReader.readDirectory(readerFilePath, (err, tree)=>{
         return cb(err, tree);
     });
 }
-exports.getFile = (req_param, cb)=>{
-    let filePath = req_param.filePath;
-    false.readFileSync(filePath, 'utf-8');
+exports.getFile = (filePath, cb)=>{
+	try{
+	filePath = prop.get('file.dir').toString() + path.sep + filePath;
+	fileDirectoryReader.existsSync(filePath, (err, result)=>{
+		if(err){
+			return cb(err);			
+		}
+		return cb(null, result);
+		});	
+	}catch(e){
+		return cb(e);	
+	}
 }

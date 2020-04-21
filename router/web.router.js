@@ -7,6 +7,6 @@ const express = require('express'),
     router.route('/healthCheckConnections').get(healthcheck.get);
     router.route('/home').get(healthcheck.home);
     router.route('/er').get(healthcheck.err);
-    router.route('/header/:header').get(indexController.get);
-    router.route('/filePath/:filePath').get(indexController.getFile);
+    router.route('/index').get(indexController.index);
+    router.route('/file').get(indexController.file);
     module.exports = router;
