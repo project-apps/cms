@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Content Management Service",
   "main": "index.js",
+  "private": false,
   "engines": {
     "node": "10.*"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
