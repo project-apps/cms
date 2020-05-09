@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hybrid-chassis-274213",
+  "private_key_id": "73ab784019ab035923b0e561ed659018b1e765e3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC12frSkOUDtIcX\naRHU2DpowN05kgzRC+bBeKB0zM7XQc1JW+N1/TdbFI6IMUER/yll6qRQe52y5jS2\nWCx+jY1v9tGXxMPlpUvLO1yD7iaudJv+7UN2YjR+DtF0+zCS/Fdma9QlngPHICfg\nLhddQxCbnIWFhg+3RKtatrvFjyreMmUJKqkozjIzcr3ryrtkpKzfjRTUzgNix9my\nS4l8TjEyMKRfZnHViSShiusq3h28KkUFIOTvIhIcIt4F6q5ix4bcVAM8sR0vSWuv\ny23hz6Z7ZPo4zOeVL6z8Lb6WcCOks1B5CLYnB0wbr1xNAdgiULB5cLIEkfHyBqmf\nv3sGKFvbAgMBAAECggEAWJt+0KzTOgvzqx+CFcDKLRKUeKHGZvGynWCmZmMJAe/J\nFE6WtX4NQ+7vSEMfnqJCzKsZJzIkc/AhjRvHil50pTKRi67PeQ0iskMZYBthc63T\n+NIpBfzx8N5Nhv+B+ozEFV7C/xVQZ+0uINi0f7fW1svcb2QUMkteZxQUyD1rONpn\n+SyAP25MoXdPYE+WruZvSZy0dQlLbt5dpnuJy47rwLr82REv3gY96k/pboX3NlGI\nuZ+oF6IpHCt0t1ZqZHjaiX0zrKTXT+kjjcxClIkJ72Iv3RQdIPQwiCgOVPvyqb+B\nIgbujd1lAEKEZKm54cfXFZ4m29IJUC49EvKSaDIxCQKBgQDudc223QG5CeH++ZHw\nLUZKeoFfUq8Ag3r2YAJT0x1zPj4WScppIMk48YQJG3/GUR5I+iTJ1Uyad6fHnfqF\nDGNdEoqPnJCYgsd5kz3ouJ7kyZel5bFjWIcWN7J+pCIRNpDTzTF1RJOY0BxJVBsH\ns1LYrP+cw7pdnbZSDWq5TXI39wKBgQDDOjyWXDJZoE99koSLYfoZ046jewlKPINb\nnVBFKiJ4OcilioScB2C4yNsznouM3SCxCV7PkH8MaEc6VLRuOgKG2CWmwf5qSuhb\nQI7EixIIU7lfpnVLfE8sgJMWebCwdaMX3SrnaS61gKpfqM4R7TfUVvY87beG+L3f\nlThPcbGqPQKBgDXl4Jptd784MaGtDURpJ1McP3OpP67xCPD5IG2L8UMkFWp6QUrj\nwzegt0RLt+S+XwcFqx0Hninn0791wLMj6q2VzEXLkI84OBgNpNeeKyPxQNqZgS/A\nScBG1Ix1UtHrMG7/GSe1WVsX5tzYKsfhy174M0penxgb1qLTL4U0sRVfAoGAIyFK\nn7/ta4VWaIFCCpbR223fP/m23T3wYT74n8mKNFopiehYHn+RXw79qtc/w1RTOqg2\nAGG/CuuEzbFKWn9jzwH8HHrSHixmjW0bg7CGySrPs6+PccrnsFlenm+9ZLN2aqfo\nvYWG2zBQ+C+3DTDDmBkh7CrWmJoQCLigTmNmFf0CgYBuyEb6BjrqkbER5PtwiOtF\npqY35w43Pnh4RC3ywcQD2QA7t6C4gaXBqyJcuAuR23S6OSdmFu5AOKtRjAW4UP3F\ndHNc3OH3AK+JsYcAdeU2V+FwhjuL5FjM7iW0J9noJyVf9uNRCc6fTDMiFWG+tutk\nwT5/o1upX+TxuQN0nlEJgw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "google-storage-bucket@hybrid-chassis-274213.iam.gserviceaccount.com",
+  "client_id": "110606192713603108461",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-storage-bucket%40hybrid-chassis-274213.iam.gserviceaccount.com"
+}

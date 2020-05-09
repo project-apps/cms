@@ -2,7 +2,7 @@ const http = require('http'),
       express = require('express'),
       cors = require('cors'),
       bodyParser = require('body-parser')
-      webRouter = require('../router/web.router.js'),
+      webRouter = require('../router/webRouter.js'),
       logger = require('../util/log4js.js');
 const port = process.env.HTTP_PORT || process.env.PORT || 3000;
 let httpServer;
