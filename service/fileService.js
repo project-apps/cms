@@ -7,14 +7,22 @@ var PropertyReader = require('properties-reader');
 var prop = PropertyReader('./resource.properties');
 
 
-exports.readFileFromBucket = (query_param, cb)=>{    
-    let bucketname = prop.get('google.bucket.name').toString();
-    logger.debug('Requesting for Google Bucket: '+bucketname);
-    bucketReader.readFile(bucketname, query_param.path, (err, data)=>{
-        return cb(err, data);
+exports.readFileFromBucket = (filePath, cb)=>{    
+   try{    
+      let bucketname = prop.get('google.bucket.name').toString();
+      logger.debug(`Reading file: ${filePath}, from Google-Bucket: ${bucketname}.`);
+      filePath = 'staticContents/'+filePath;
+      bucketReader.readFile(bucketname, filePath, (err, data)=>{
+	if(err){
+	  return cb(err);
+	}        
+        return cb(null, data);
     });
-  }
-  exports.readFileFromDirectory = (filePath, cb)=>{
+   }catch(e){
+	return cb(e);	
+   }
+}
+exports.readFileFromDirectory = (filePath, cb)=>{
 	try{
 	filePath = prop.get('file.dir').toString() + path.sep + filePath;
 	directoryReader.readFile(filePath, (err, result)=>{

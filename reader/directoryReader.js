@@ -17,10 +17,19 @@ exports.listDirFilesTree = (dirPath, cb)=>{
         return cb(err);
     });
 }
-exports.readFile = (filePath, cb)=>{
+exports.readFile = (filePath, cb)=>{	
     //fs.readFileSync(filePath, 'utf-8');
-    existsSync(filePath, (err, file)=>{
-        return (err, file);
+   existsSync(filePath, (err, file)=>{
+      new Promise((resolve, reject)=>{
+	if(err){
+           reject(err);		
+	}
+	resolve(file);	
+	}).then(file=>{
+	   return cb(null, file);		
+	}).catch(err=>{
+	   return cb(err);	
+	});        
     });
 }
 existsSync = (filePath, cb)=>{

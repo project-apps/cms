@@ -2,7 +2,7 @@
 const {Storage} = require('@google-cloud/storage');
 var storage = new Storage({
   projectId: 'hybrid-chassis-274213',
-  keyFilename: 'C:\\Users\\Admin\\repo\\project-apps\\cms\\hybrid-chassis-274213-73ab784019ab.json'
+  keyFilename: './hybrid-chassis-274213-73ab784019ab.json'
 });
 async function listFiles(bucketName, path, cb){
   try{
@@ -14,26 +14,21 @@ async function listFiles(bucketName, path, cb){
     const [files] =  await bucket.getFiles(config);
     return cb(null, files);
   }catch(e){
-    return cb(e, null);
+    return cb(e);
   }
 }
 async function readFile(bucketName, path, cb){
-  try{
-    var archivo =  storage.bucket(bucketName).file('staticContents/java/1/1.1/Document-1-1.txt').createReadStream();
-    console.log('Concat Data');
+  let flag = false;
+    const stream =  storage.bucket(bucketName).file(path).createReadStream();  
     var  buf = '';
-    archivo.on('data', function(d) {
-      buf += d;
-    }).on('end', function() {
-      console.log(buf);
-      console.log("Reading of file end.");
+    await stream.on('data',(data)=> {
+      buf += data;
+    }).on('end', async ()=> {
       return cb(null, buf);
-    });     
-  }catch(e){
-    return cb(e, null);
-  }
+    }).on('error', () => {
+     return cb(new Error('Failed to get file'));
+    });  
 }
-
 
 async function createBucket(bucketName) {
     // Creates a new bucket in the Asia region with the coldline default storage
