@@ -26,7 +26,7 @@ async function readFile(bucketName, path, cb){
     }).on('end', async ()=> {
       return cb(null, buf);
     }).on('error', () => {
-     return cb(new Error('Failed to get file'));
+     return cb(new Error(`Failed to get file: ${path}`));
     });  
 }
 

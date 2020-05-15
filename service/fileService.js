@@ -13,11 +13,11 @@ exports.readFileFromBucket = (filePath, cb)=>{
       logger.debug(`Reading file: ${filePath}, from Google-Bucket: ${bucketname}.`);
       filePath = 'staticContents/'+filePath;
       bucketReader.readFile(bucketname, filePath, (err, data)=>{
-	if(err){
-	  return cb(err);
-	}        
-        return cb(null, data);
-    });
+		if(err){
+	  		return cb(err);
+		}        
+    	return cb(null, data);
+    	});
    }catch(e){
 	return cb(e);	
    }

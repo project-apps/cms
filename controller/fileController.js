@@ -16,9 +16,9 @@ exports.readFileFromBucket = (req, res)=>{
         res.status(200);
         res.send(value);
       }).catch(err=>{
-        logger.error(`Error while fetching data:\n${err.stack || err}`);
+        logger.error(`Error while reading path: ${err.stack || err}`);
         res.status(404);
-        res.send('Error while fetching data.');
+        res.send(err);
       });
       
       /*for(const[key, value] of Object(metadata)){
@@ -40,9 +40,9 @@ exports.readFileFromBucket = (req, res)=>{
 	 res.status(200);
 	 res.sendFile(value);
 	}).catch(err=>{
-          logger.error(`Error while fetching data:\n${err.stack || err}`);
+    logger.error(`Error in reading path: ${err.stack || err}`);
 	  res.status(404);
-          res.send('Error while fetching data.');
+    res.send(err);
 	});
     });  
   }

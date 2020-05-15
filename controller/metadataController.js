@@ -30,22 +30,16 @@ exports.getBucketMetadata = (req, res)=>{
   let path = req.query.path;
   logger.debug('Path request for:'+path);
   let query_param = {'path': path};
-  metadataService.getBucketMetadata(query_param, (err, files)=>{
+  metadataService.getBucketMetadata(query_param, (err, metadata)=>{
     new Promise((resolve, reject)=>{
-      var pathMetadata = [];
       if(err){
         reject(err);
-      }else if(files) {
-        files.forEach(file => {
-          var data = {'name': file.name};
-          pathMetadata.push(data);
-          //console.log(file.name);
-        });
+      }else if(metadata) {
+        resolve(metadata);
         //logger.debug('Data found for Header:'+path+', is as below:\n'+ JSON.stringify(metadata));
       }else{
         logger.debug('No data found for Path:'+path);
     }
-    resolve(pathMetadata);
     }).then(value=>{
       res.status(200);
       res.send(value);
