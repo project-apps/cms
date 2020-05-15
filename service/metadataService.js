@@ -51,11 +51,15 @@ exports.getBucketMetadata = (query_param, cb)=>{
                 }
             }
           });
-        return cb(null, startNode);
+          if(startNode.children[0]){
+              return cb(null, startNode.children[0]);
+          }else{
+            return cb(null, startNode.children);
+          }
     });
   }
 function getPath(objects , index){
-    var d = '/'+rootpath;
+    var d = '';
     for(var i=0; i<=index; i++){
         d+='/'+objects[i];
     }
@@ -80,8 +84,4 @@ class Node{
         this.size = size;
         this.type =type;
     }
-    /*push(value){
-        this.next[this.length] = value;
-        this.length++;
-    } */
 }
