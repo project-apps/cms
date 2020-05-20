@@ -2,7 +2,8 @@ const http = require('http'),
       express = require('express'),
       cors = require('cors'),
       bodyParser = require('body-parser')
-      webRouter = require('../router/webRouter.js'),
+      bucketRouter = require('../router/bucketRouter.js'),
+      dirRouter = require('../router/directoryRouter.js'),
       logger = require('../util/log4js.js');
 const port = process.env.HTTP_PORT || process.env.PORT || 3000;
 let httpServer;
@@ -17,7 +18,8 @@ exports.initialize = ()=>{
         app.use(bodyParser.json())// parse application/json
         app.use(express.static('views'));
         app.set('view engine', 'ejs');
-        app.use('/cms', webRouter);
+        app.use('/bucket', bucketRouter);
+        app.use('/dir', dirRouter);
 	
         httpServer.listen(port, err=>{
             if(err){
