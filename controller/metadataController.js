@@ -26,11 +26,11 @@ exports.getDirectoryMetadata = (req, res) => {
   });
 };
 
-exports.getBucketMetadata = (req, res)=>{
+exports.listObjects = (req, res)=>{
   let path = req.query.path;
   logger.debug('Path request for:'+path);
-  let query_param = {'path': path};
-  metadataService.getBucketMetadata(query_param, (err, metadata)=>{
+  let params = {'path': path, 'provider': 'aws'};
+  metadataService.listObjects(params, (err, metadata)=>{
     new Promise((resolve, reject)=>{
       if(err){
         reject(err);
@@ -38,7 +38,7 @@ exports.getBucketMetadata = (req, res)=>{
         resolve(metadata);
         //logger.debug('Data found for Header:'+path+', is as below:\n'+ JSON.stringify(metadata));
       }else{
-        logger.debug('No data found for Path:'+path);
+        logger.debug(`No data found for Path: ${path}`);
     }
     }).then(value=>{
       res.status(200);

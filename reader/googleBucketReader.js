@@ -7,7 +7,6 @@ var storage = new Storage({
 async function listFiles(bucketName, path, cb){
   try{
     const config ={
-     // autoPaginate: false,
       prefix: path+'/'
     };
     var bucket = storage.bucket(bucketName);

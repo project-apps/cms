@@ -7,7 +7,7 @@ const express = require('express'),
     router.route('/healthCheckConnections').get(healthcheck.get);
     router.route('/home').get(healthcheck.home);
     router.route('/er').get(healthcheck.err);
-    router.route('/metadata').get(metadataController.getBucketMetadata);
-    router.route('/file').get(fileController.readFileFromBucket);
+    router.route('/metadata').get(metadataController.listObjects);
+    router.route('/file').get(fileController.getObject);
     
     module.exports = router;

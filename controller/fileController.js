@@ -3,10 +3,11 @@ const fileService = require('../service/fileService.js'),
 express = require('express'),
 logger = require('../util/log4js.js');
 
-exports.readFileFromBucket = (req, res)=>{
-    let filePath = decodeURIComponent(req.query.path);
-    logger.debug('File request for:'+filePath);
-    fileService.readFileFromBucket(filePath, (err, fileData)=>{
+exports.getObject = (req, res)=>{
+    let objPath = decodeURIComponent(req.query.path);
+    logger.debug('File request for:'+ objPath);
+    let params = {'objPath': objPath, 'provider': 'aws'};
+    fileService.getObject(params, (err, fileData)=>{
       new Promise((resolve, reject)=>{
         if(err){
           reject(err);
