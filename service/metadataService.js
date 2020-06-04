@@ -26,17 +26,31 @@ exports.listObjects = (queryParams, cb)=>{
             Prefix : absPath+'/'
           };
         awsBucketReader.listObjects(params, absPath, (err, files)=>{
-            return cb(err, files);
+            var contents = files.Contents;
+            parseData(contents, (err, data)=>{
+                return cb(err, data);
+            });
         });
     } else if('GOOGLE'===(queryParams.provider).toUpperCase()){
         googleBucketReader.listFiles(bucketname, absPath, (err, files)=>{
             if(err){
                 return cb(err);
             } 
-            var node = new Node(rootpath, '/'+rootpath, getType(rootpath));
+            parseData(files, (err, data)=>{
+                return cb(err, data);
+            });
+        });
+    } else{
+        return cb(new Error('No Provider defined, Or defined provider is not supported.'));
+    }
+}
+
+function parseData(files, cb){
+    var node = new Node(rootpath, '/'+rootpath, getType(rootpath));
             var startNode = node;
             files.forEach(file => {
-                let filePath = trimMetadata(file.name); // java/1/1.1/Document1-1.txt
+               // let filePath = trimMetadata(file.name); // for Google java/1/1.1/Document1-1.txt
+               let filePath = trimMetadata(file.Key);  //for AWS
                 var objects = filePath.split('/');      // java/1/1.2/Document1-2.txt
                 node = startNode;
                 for(var i=0; i< objects.length; i++){
@@ -65,13 +79,8 @@ exports.listObjects = (queryParams, cb)=>{
               }else{
                 return cb(null, startNode.children);
               }
-        });
-    } else{
-        return cb(new Error('No Provider defined, Or defined provider is not supported.'));
-    }
+}
 
-    
-  }
 function getPath(objects , index){
     var d = '';
     for(var i=0; i<=index; i++){
@@ -89,7 +98,6 @@ function getType(pth){
 function trimMetadata(data){
     return data.substr(data.indexOf(rootpath)+rootpath.length+1, data.length);
 }
-
 class Node{
     constructor(name, path, type, size){
         this.path = path;

@@ -1,0 +1,10 @@
+[2020-05-31T10:57:53.821] [ERROR] error - UncaughtException:
+TypeError: Cannot read property 'apply' of undefined
+[2020-05-31T11:00:06.139] [ERROR] error - UncaughtException:
+TypeError: Cannot read property 'apply' of undefined
+[2020-05-31T11:01:52.751] [ERROR] error - UncaughtException:
+TypeError: Cannot read property 'apply' of undefined
+[2020-05-31T11:11:25.150] [ERROR] error - UncaughtException:
+TypeError: Cannot read property 'Body' of null
+[2020-05-31T11:17:31.307] [ERROR] error - UncaughtException:
+TypeError: Cannot read property 'Body' of null

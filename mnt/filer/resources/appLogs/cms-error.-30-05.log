@@ -1,0 +1,102 @@
+[2020-05-30T19:29:58.498] [ERROR] error - InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.
+    at Request.extractError (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\services\s3.js:831:35)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:683:14)
+    at Request.transition (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:685:12)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  message: 'The AWS Access Key Id you provided does not exist in our records.',
+  code: 'InvalidAccessKeyId',
+  region: 'ap-south-1',
+  time: 2020-05-30T13:59:58.484Z,
+  requestId: 'A39CFE0887EE9EB0',
+  extendedRequestId: 'o0vrwfrzqJqLaNix8Df038FfMxmHQ6BgdXSZKuT/OWjEa1YQBeYATrh1FZC8b95pnVpUmsSBYOI=',
+  cfId: undefined,
+  statusCode: 403,
+  retryable: false,
+  retryDelay: 1.162572984984367
+}
+[2020-05-30T19:29:58.510] [ERROR] error - Error while fetching data:
+InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.
+    at Request.extractError (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\services\s3.js:831:35)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:683:14)
+    at Request.transition (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:685:12)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:116:18)
+[2020-05-30T19:30:49.525] [ERROR] error - InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.
+    at Request.extractError (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\services\s3.js:831:35)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:683:14)
+    at Request.transition (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:685:12)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  message: 'The AWS Access Key Id you provided does not exist in our records.',
+  code: 'InvalidAccessKeyId',
+  region: 'ap-south-1',
+  time: 2020-05-30T14:00:49.521Z,
+  requestId: '2D62231B620AAFCA',
+  extendedRequestId: '9nFEXlkdcaTDuNAFcjKB0N8jxZoRVeoBuWcsuhaeS3pkMPM2vzCVH4zHCQEtcOfqx5TA3r7HOjU=',
+  cfId: undefined,
+  statusCode: 403,
+  retryable: false,
+  retryDelay: 170.08616212776707
+}
+[2020-05-30T19:30:49.551] [ERROR] error - Error while fetching data:
+InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.
+    at Request.extractError (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\services\s3.js:831:35)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:683:14)
+    at Request.transition (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:685:12)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:116:18)
+[2020-05-30T19:41:30.287] [ERROR] error - AccessDenied: Access Denied
+    at Request.extractError (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\services\s3.js:831:35)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:683:14)
+    at Request.transition (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:685:12)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  message: 'Access Denied',
+  code: 'AccessDenied',
+  region: 'ap-south-1',
+  time: 2020-05-30T14:11:30.283Z,
+  requestId: '99A14886DF071F67',
+  extendedRequestId: 'ShefKHv6+HXTqDFRJmHfUau2QCjOt/wL/WE4AsRdXAULTtgZCBShu59/eKAG3P6ZviIOCODr1Os=',
+  cfId: undefined,
+  statusCode: 403,
+  retryable: false,
+  retryDelay: 130.7657533983761
+}
+[2020-05-30T19:41:30.309] [ERROR] error - Error while fetching data:
+AccessDenied: Access Denied
+    at Request.extractError (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\services\s3.js:831:35)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:683:14)
+    at Request.transition (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\request.js:685:12)
+    at Request.callListeners (C:\Users\Admin\repo\project-apps\cms\node_modules\aws-sdk\lib\sequential_executor.js:116:18)

@@ -1,0 +1,99 @@
+[2020-05-31T10:53:43.725] [TRACE] out - Starting application.
+[2020-05-31T10:53:43.740] [TRACE] out - Web server listning on :3000
+[2020-05-31T10:53:53.405] [TRACE] out - Req ur: /cms/bucket/metadata?path=java
+[2020-05-31T10:53:57.391] [TRACE] out - Req ur: /bucket/metadata?path=java
+[2020-05-31T10:54:03.411] [TRACE] out - Req ur: /bucket/metadata?path=java
+[2020-05-31T10:54:39.728] [TRACE] out - Req ur: /bucket/file%3Fpath=java/introduction-to-java.html
+[2020-05-31T10:55:32.112] [TRACE] out - Starting application.
+[2020-05-31T10:55:32.133] [TRACE] out - Web server listning on :3000
+[2020-05-31T10:55:35.532] [TRACE] out - Req ur: /bucket/file?path=java/introduction-to-java.html
+[2020-05-31T10:57:48.937] [TRACE] out - Starting application.
+[2020-05-31T10:57:48.960] [TRACE] out - Web server listning on :3000
+[2020-05-31T10:57:53.784] [TRACE] out - File request for:undefined
+[2020-05-31T10:57:53.821] [ERROR] out - UncaughtException:
+TypeError: Cannot read property 'apply' of undefined
+[2020-05-31T11:00:01.934] [TRACE] out - Starting application.
+[2020-05-31T11:00:01.946] [TRACE] out - Web server listning on :3000
+[2020-05-31T11:00:06.135] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T11:00:06.137] [TRACE] out - File request for:undefined
+[2020-05-31T11:00:06.139] [ERROR] out - UncaughtException:
+TypeError: Cannot read property 'apply' of undefined
+[2020-05-31T11:01:51.190] [TRACE] out - Starting application.
+[2020-05-31T11:01:51.202] [TRACE] out - Web server listning on :3000
+[2020-05-31T11:01:52.745] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T11:01:52.748] [TRACE] out - File request for:undefined
+[2020-05-31T11:01:52.751] [ERROR] out - UncaughtException:
+TypeError: Cannot read property 'apply' of undefined
+[2020-05-31T11:11:21.051] [TRACE] out - Starting application.
+[2020-05-31T11:11:21.062] [TRACE] out - Web server listning on :3000
+[2020-05-31T11:11:23.576] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T11:11:23.578] [TRACE] out - File request for:undefined
+[2020-05-31T11:11:23.579] [TRACE] out - Reading file: blogs/undefined, from aws Bucket: static-content-bucket.
+[2020-05-31T11:11:25.151] [ERROR] out - UncaughtException:
+TypeError: Cannot read property 'Body' of null
+[2020-05-31T11:14:14.749] [TRACE] out - Starting application.
+[2020-05-31T11:14:14.760] [TRACE] out - Web server listning on :3000
+[2020-05-31T11:14:17.934] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T11:17:27.184] [TRACE] out - Starting application.
+[2020-05-31T11:17:27.196] [TRACE] out - Web server listning on :3000
+[2020-05-31T11:17:30.202] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T11:17:30.204] [TRACE] out - File request for:undefined
+[2020-05-31T11:17:30.205] [TRACE] out - Reading file: blogs/undefined, from aws Bucket: static-content-bucket.
+[2020-05-31T11:17:31.307] [ERROR] out - UncaughtException:
+TypeError: Cannot read property 'Body' of null
+[2020-05-31T11:26:54.515] [TRACE] out - Starting application.
+[2020-05-31T11:26:54.536] [TRACE] out - Web server listning on :3000
+[2020-05-31T11:26:57.791] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T11:33:34.233] [TRACE] out - Starting application.
+[2020-05-31T11:33:34.245] [TRACE] out - Web server listning on :3000
+[2020-05-31T11:33:43.419] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T11:48:43.425] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T12:10:19.328] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T14:22:57.200] [TRACE] out - Starting application.
+[2020-05-31T14:22:57.213] [TRACE] out - Web server listning on :3000
+[2020-05-31T14:23:09.065] [TRACE] out - req.url: /metadata?path=java
+[2020-05-31T14:23:21.282] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T14:23:37.552] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T14:28:54.971] [TRACE] out - Starting application.
+[2020-05-31T14:28:54.994] [TRACE] out - Web server listning on :3000
+[2020-05-31T14:35:09.009] [TRACE] out - Starting application.
+[2020-05-31T14:35:09.021] [TRACE] out - Web server listning on :3000
+[2020-05-31T14:35:13.392] [TRACE] out - req.url: /file%3Fpath=java/introduction-to-java.html
+[2020-05-31T14:35:42.885] [TRACE] out - Starting application.
+[2020-05-31T14:35:42.897] [TRACE] out - Web server listning on :3000
+[2020-05-31T14:35:45.190] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T14:36:52.268] [TRACE] out - Starting application.
+[2020-05-31T14:36:52.281] [TRACE] out - Web server listning on :3000
+[2020-05-31T14:36:53.596] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T14:38:12.306] [TRACE] out - Starting application.
+[2020-05-31T14:38:12.318] [TRACE] out - Web server listning on :3000
+[2020-05-31T14:38:14.370] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T14:38:54.616] [TRACE] out - Starting application.
+[2020-05-31T14:38:54.634] [TRACE] out - Web server listning on :3000
+[2020-05-31T14:38:54.688] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T14:39:33.363] [TRACE] out - Starting application.
+[2020-05-31T14:39:33.376] [TRACE] out - Web server listning on :3000
+[2020-05-31T14:39:35.301] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T14:39:38.091] [TRACE] out - req.url: /file?path=java/introduction-to-java.html
+[2020-05-31T17:06:14.316] [TRACE] out - Starting application.
+[2020-05-31T17:06:14.339] [TRACE] out - Web server listning on :3000
+[2020-05-31T18:24:35.060] [TRACE] out - Path request for:java
+[2020-05-31T18:24:35.063] [TRACE] out - Requesting for aws Bucket: static-content-bucket
+[2020-05-31T18:24:35.064] [TRACE] out - Requesting for Path: blogs/java
+[2020-05-31T20:55:45.118] [TRACE] out - Path request for:java11
+[2020-05-31T20:55:45.120] [TRACE] out - Requesting for aws Bucket: static-content-bucket
+[2020-05-31T20:55:45.121] [TRACE] out - Requesting for Path: blogs/java11
+[2020-05-31T21:24:12.118] [TRACE] out - Starting application.
+[2020-05-31T21:24:12.129] [TRACE] out - Web server listning on :3000
+[2020-05-31T21:24:18.996] [TRACE] out - Path request for:java
+[2020-05-31T21:24:18.997] [TRACE] out - Requesting for aws Bucket: static-content-bucket
+[2020-05-31T21:24:18.998] [TRACE] out - Requesting for Path: blogs/java
+[2020-05-31T21:25:57.609] [TRACE] out - req.query: [object Object]
+[2020-05-31T21:25:57.611] [TRACE] out - File request for:/java/difference-between-opnjdk and oraclejdk.html
+[2020-05-31T21:25:57.613] [TRACE] out - Reading file: blogs/java/difference-between-opnjdk and oraclejdk.html, from aws Bucket: static-content-bucket.
+[2020-05-31T21:26:20.233] [TRACE] out - Path request for:java11
+[2020-05-31T21:26:20.234] [TRACE] out - Requesting for aws Bucket: static-content-bucket
+[2020-05-31T21:26:20.235] [TRACE] out - Requesting for Path: blogs/java11
+[2020-05-31T21:26:44.343] [TRACE] out - Path request for:nodejs
+[2020-05-31T21:27:14.896] [TRACE] out - Requesting for aws Bucket: static-content-bucket
+[2020-05-31T21:27:14.899] [TRACE] out - Requesting for Path: blogs/nodejs

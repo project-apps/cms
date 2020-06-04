@@ -14,7 +14,7 @@ exports.getObject = (queryParams, cb)=>{
 	if(!isStartsWith(filePath, '/')){
 		filePath = '/'+filePath ;	
 	}
-	filePath = rootpath+filePath;
+	filePath = rootpath + filePath;
 	let provider = queryParams.provider;
 	logger.debug(`Reading file: ${filePath}, from ${provider} Bucket: ${bucketname}.`);
 	if("AWS"=== (provider.toUpperCase())){

@@ -4,28 +4,29 @@ express = require('express'),
 logger = require('../util/log4js.js');
 
 exports.getObject = (req, res)=>{
-    let objPath = decodeURIComponent(req.query.path);
-    logger.debug('File request for:'+ objPath);
-    let params = {'objPath': objPath, 'provider': 'aws'};
-    fileService.getObject(params, (err, fileData)=>{
-      new Promise((resolve, reject)=>{
-        if(err){
-          reject(err);
-        }
-        resolve(fileData);
-      }).then(value=>{
-        res.status(200);
-        res.send(value);
-      }).catch(err=>{
-        logger.error(`Error while reading path: ${err.stack || err}`);
-        res.status(404);
-        res.send(err);
-      });
-      
-      /*for(const[key, value] of Object(metadata)){
-        logger.debug(`${key}:${value}`);
-      }*/
+  logger.debug('req.query: '+req.query);
+  let objPath = decodeURIComponent(req.query.path);
+  logger.debug('File request for:'+ objPath);
+  let params = {'objPath': objPath, 'provider': 'aws'};
+  fileService.getObject(params, (err, fileData)=>{
+    new Promise((resolve, reject)=>{
+      if(err){
+        reject(err);
+      }
+      resolve(fileData);
+    }).then(value=>{
+      res.status(200);
+      res.send(value);
+    }).catch(err=>{
+      logger.error(`Error while reading path: ${err.stack || err}`);
+      res.status(404);
+      res.send(err);
     });
+    
+    /*for(const[key, value] of Object(metadata)){
+      logger.debug(`${key}:${value}`);
+    }*/
+  });
   }
 
   exports.readFileFromDirectory = (req, res)=>{

@@ -1,0 +1,26 @@
+[2020-05-30T19:29:57.954] [DEBUG] debug - Path request for:java
+[2020-05-30T19:29:57.959] [DEBUG] debug - Requesting for aws Bucket: static-content-bucket
+[2020-05-30T19:29:57.960] [DEBUG] debug - Requesting for Path: blogs/java
+[2020-05-30T19:30:45.254] [DEBUG] debug - Starting application.
+[2020-05-30T19:30:45.269] [DEBUG] debug - Web server listning on :3000
+[2020-05-30T19:30:47.858] [DEBUG] debug - Path request for:java
+[2020-05-30T19:30:47.860] [DEBUG] debug - Requesting for aws Bucket: static-content-bucket
+[2020-05-30T19:30:47.861] [DEBUG] debug - Requesting for Path: blogs/java
+[2020-05-30T19:41:24.582] [DEBUG] debug - Starting application.
+[2020-05-30T19:41:24.595] [DEBUG] debug - Web server listning on :3000
+[2020-05-30T19:41:28.949] [DEBUG] debug - Path request for:java
+[2020-05-30T19:41:28.950] [DEBUG] debug - Requesting for aws Bucket: static-content-bucket
+[2020-05-30T19:41:28.952] [DEBUG] debug - Requesting for Path: blogs/java
+[2020-05-30T19:46:31.546] [DEBUG] debug - Starting application.
+[2020-05-30T19:46:31.570] [DEBUG] debug - Web server listning on :3000
+[2020-05-30T19:46:34.467] [DEBUG] debug - Path request for:java
+[2020-05-30T19:46:34.468] [DEBUG] debug - Requesting for aws Bucket: static-content-bucket
+[2020-05-30T19:46:34.469] [DEBUG] debug - Requesting for Path: blogs/java
+[2020-05-30T21:21:28.640] [DEBUG] debug - File request for:java/introduction-to-java.html
+[2020-05-30T21:21:28.643] [DEBUG] debug - Reading file: blogs/java/introduction-to-java.html, from aws Bucket: static-content-bucket.
+[2020-05-30T21:36:24.889] [DEBUG] debug - Starting application.
+[2020-05-30T21:36:24.905] [DEBUG] debug - Web server listning on :3000
+[2020-05-30T21:37:10.034] [DEBUG] debug - Starting application.
+[2020-05-30T21:37:10.047] [DEBUG] debug - Web server listning on :3000
+[2020-05-30T22:23:07.942] [DEBUG] debug - Starting application.
+[2020-05-30T22:23:07.965] [DEBUG] debug - Web server listning on :3000

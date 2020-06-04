@@ -4,7 +4,7 @@ const webServer = require('./config/webserver.js'),
     async function startup(){
     try{
         logger.debug('Starting application.');
-            await webServer.initialize();
+        await webServer.initialize();
         }catch(err){
             logger.error(err);
             process.exit(1);

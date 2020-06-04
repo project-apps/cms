@@ -1,0 +1,5 @@
+[2020-06-01T15:00:05.736] [TRACE] out - req.query: [object Object]
+[2020-06-01T15:00:05.738] [TRACE] out - File request for:python/introduction-to-python.html
+[2020-06-01T15:00:05.739] [TRACE] out - Reading file: blogs/python/introduction-to-python.html, from aws Bucket: static-content-bucket.
+[2020-06-01T15:00:06.135] [ERROR] out - UncaughtException:
+TypeError: Cannot read property 'Body' of null
