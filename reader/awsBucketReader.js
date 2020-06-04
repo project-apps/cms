@@ -1,8 +1,8 @@
 'use strict'
 var AWS = require('aws-sdk');
 AWS.config.update({
-  accessKeyId: "AKIA5CYUVKDYFDTPYAEA",
-  secretAccessKey: "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"
+  accessKeyId: "*********",
+  secretAccessKey: "********"
 });
 var s3 = new AWS.S3();
 exports.listObjects = (params, path, cb)=>{
