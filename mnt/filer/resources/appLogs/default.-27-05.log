@@ -1,9 +1,0 @@
-[2020-05-27T21:51:15.170] [TRACE] out - Starting application.
-[2020-05-27T21:51:15.212] [TRACE] out - Web server listning on :3000
-[2020-05-27T21:53:47.732] [TRACE] out - Starting application.
-[2020-05-27T21:53:47.744] [TRACE] out - Web server listning on :3000
-[2020-05-27T21:57:07.397] [TRACE] out - Starting application.
-[2020-05-27T21:57:07.415] [TRACE] out - Web server listning on :3000
-[2020-05-27T22:13:21.124] [TRACE] out - Path request for:java
-[2020-05-27T22:13:21.126] [TRACE] out - Requesting for aws Bucket: static-content-bucket
-[2020-05-27T22:13:21.127] [TRACE] out - Requesting for Path: blogs/java

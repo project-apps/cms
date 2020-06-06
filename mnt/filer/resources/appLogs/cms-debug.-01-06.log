@@ -1,3 +1,0 @@
-[2020-06-01T15:00:05.733] [DEBUG] debug - req.query: [object Object]
-[2020-06-01T15:00:05.738] [DEBUG] debug - File request for:python/introduction-to-python.html
-[2020-06-01T15:00:05.739] [DEBUG] debug - Reading file: blogs/python/introduction-to-python.html, from aws Bucket: static-content-bucket.
