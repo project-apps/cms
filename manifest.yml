@@ -3,7 +3,6 @@ applications:
  - name: cms
    random-route: true
    memory: 128M
-env_variables:
-  GCLOUD_STORAGE_BUCKET: gfsb
-  GOOGLE_APPLICATION_CREDENTIALS: 
-  GOOGLE_CLOUD_PROJECT:
+   timeout: 80
+   env:
+    env_type: production
